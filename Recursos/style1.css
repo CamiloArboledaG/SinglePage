@@ -1,0 +1,79 @@
+/* en este body leemos la imagen que va al fondo y la acomodamos un un tamaño del 100% y ajustamos para que quede centrada segun
+la resolución 1920x1080 y ajustamos con flex wrap */
+body{
+    background-image: url("bg.jpg");
+    background-size: 100%;
+    background-position-y:48.5em;
+    background-position-x: 85em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* abrimos la class busqueda que se implemento en el div anterior y le damos un flex
+la organizamos en el centro del todo en formato columna, le damos fondo blanco y le damos las respectivas margenes con
+unos bordes y una sombra */
+.c-busqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 1rem;
+    margin-right: 35%;
+    margin-left: 35%;
+    min-width: 25rem;
+    margin-top: 5rem;
+    box-shadow: 1px 3px 3px rgb(179, 179, 179);
+    
+}
+/* le damos al div que contiene la imagen la orden de flex y que se ajuste con wrap */
+.c-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* le damos un heigth establecido y un min y max de su ancho juntos con una margen externa */
+.logo-uao{
+    height: 100%;
+    min-width: 1rem;
+    max-width: 17rem;
+    margin: 2rem;
+}
+/* creamos la barra de busqueda que nombramos como btn1 y le damos flex damos un borde, lo pinto de rojo y le doy un color gris, organizo la 
+letra y le doy una margen de 0 para que se pegue los bordes*/
+.btn1{
+    min-width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(146, 36, 36);
+    border-radius: 3rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    color: rgb(179, 179, 179);
+    font-family: sans-serif;
+    font-weight: 200;
+    margin: 0rem;
+}
+/* hacemos lo mismo que el btn anterior solo que a ste la letra ya no es de color gris, es blanco y el fondo del btn es todo color rojo*/
+.btn2{
+    min-width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(114, 28, 28);
+    background: rgb(146, 36, 36);
+    border-radius: 3rem;
+    padding: 4.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
